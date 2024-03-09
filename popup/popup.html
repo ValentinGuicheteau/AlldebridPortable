@@ -1,0 +1,28 @@
+<!-- 
+    This file is used to display the popup of the extension. 
+    Author : Valentin GUICHETEAU
+    Last update : 2024/03/08
+    Repository : https://github.com/ValentinGuicheteau/AlldebridPortable
+-->
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Alldebrid portable</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="popup-container">
+        <h1>Alldebrid portable</h1>
+        <textarea id='content' type="text"></textarea>
+        <button id="openSettings">Settings</button>
+        <div id="apiKeyForm" style="display:none;">
+            <input type="text" id="apiKeyInput" placeholder="Enter your API key">
+            <button id="saveApiKey">Save</button>
+        </div>
+    </div>
+    <script type="module" src="popup.js"></script>
+</body>
+</html>

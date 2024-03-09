@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Alldebrid portable",
+    "description": "Alldebrid portable extension to unlock download links from filehosters",
+    "version": "1.0",
+    "permissions": ["contextMenus", "activeTab", "clipboardWrite","storage", "notifications"],
+    "background": {
+      "service_worker": "background.js",
+      "type": "module"
+    },
+    "action": {
+      "default_popup": "./popup/popup.html",
+      "default_icon": "./images/icon.png"
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["scripts/api.js"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
